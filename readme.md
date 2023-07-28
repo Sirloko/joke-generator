@@ -6,7 +6,7 @@ The **Joke Generator** is a command-line application that allows users to genera
 
 To use the **Joke Generator** CLI app, you need to have [Rust](https://www.rust-lang.org/) installed on your system. If you don't have Rust installed, you can follow the installation instructions from the Rust website.
 
-    Cargo add joke-generator
+    cargo install --path . && joke-generator
 
 ## Usage
 
