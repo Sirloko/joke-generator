@@ -50,6 +50,7 @@ enum Language {
     English,
     German,
     French,
+    Spanish,
 }
 
 impl FromStr for Language {
@@ -60,6 +61,7 @@ impl FromStr for Language {
             "en" => Ok(Language::English),
             "de" => Ok(Language::German),
             "fr" => Ok(Language::French),
+            "es" => Ok(Language::Spanish),
             _ => Err(()),
         }
     }
@@ -71,6 +73,7 @@ impl Language {
             Language::English => "en",
             Language::German => "de",
             Language::French => "fr",
+            Language::Spanish => "es",
         }
         .to_lowercase()
     }
@@ -80,6 +83,7 @@ impl Language {
             Language::English => "en",
             Language::German => "de",
             Language::French => "fr",
+            Language::Spanish => "es",
         };
         let lowercase_variant = variant_name.to_lowercase();
         lowercase_variant.replace("\"", "")
@@ -92,8 +96,8 @@ fn main() {
             Arg::new("category")
                 .short('c')
                 .long("category")
-                .long_help("Category can only contain *Programming|Misc|Dark|Pun*")
-                .required(true)
+                .long_help("Category can only contain either ** programming | misc | dark | pun | spooky | christmas **")
+                // .required(true)
                 .value_name("Joke category")
                 .default_value("Programming")
                 .action(ArgAction::Set),
@@ -101,6 +105,7 @@ fn main() {
         .arg(
             Arg::new("lang")
                 .short('l')
+                .long_help("Language can only contain either ** en | de | fr | es **")
                 // .required(true)
                 .default_value("en")
                 .action(ArgAction::Set),
@@ -168,7 +173,7 @@ fn main() {
         // Combine the base URL with the dynamic part
         let url = format!("{}{}", base_url, dynamic_part);
 
-        println!("Response: {}", url);
+        // println!("Response: {}", url);
         // return Ok(());
         // Create a client with default settings
         let client = reqwest::Client::new();
