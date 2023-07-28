@@ -67,8 +67,14 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 Thank you for using the **Joke Generator** CLI app. We hope you have fun generating jokes and sharing laughter! If you have any feedback or suggestions, don't hesitate to reach out. Happy joking! 😄
 
+## Credits
 
+The **Joke Generator** CLI app fetches jokes from the [JokeAPI](https://sv443.net/jokeapi/v2) provided by [sv443](https://sv443.net/). We would like to express our gratitude to sv443 for offering this fantastic API, which allows us to bring laughter and humor to our users.
 
+The JokeAPI provides a wide range of jokes in various categories, making it an excellent source for generating jokes on demand. Without this amazing API, the **Joke Generator** app wouldn't be possible.
 
+If you'd like to explore more about the JokeAPI or show your support to sv443, visit their website [JokeAPI](https://sv443.net/jokeapi/v2) and [sv443.net](https://sv443.net/).
+
+Thank you, sv443, for spreading laughter with your JokeAPI! 🎉😄
 
 
