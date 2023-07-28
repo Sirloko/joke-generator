@@ -1,11 +1,11 @@
 [package]
-name = "demo"
+name = "joke-generator"
 version = "0.1.0"
 edition = "2021"
 authors = ["Elijah <oyeleke.elijah205@gmail.com>"]
 license = "MIT OR Apache-2.0"
 description = "a command-line application that allows users to generate jokes from different categories."
-readme = "README.md"
+readme = "readme.md"
 homepage = "https://github.com/sirloko/joke-generator"
 repository = "https://github.com/sirloko/joke-generator"
 keywords = ["cli", "joke", "random"]
